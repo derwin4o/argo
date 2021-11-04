@@ -5,6 +5,7 @@ metadata:
   labels:
     app: deploy-nginx
   name: deploy-nginx
+  namespace: default
 spec:
   replicas: 1
   selector:
