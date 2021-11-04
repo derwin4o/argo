@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx
-  namespace: nginx
+  namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec: 
-  project: default
+  project: default 
   source:
     repoURL: https://github.com/derwin4o/argo.git
     targetRevision: HEAD
