@@ -19,6 +19,7 @@ spec:
 #         value: quay.io/ablock/gitops-helm-quarkus
 #   chart: vault-stable
    repoURL: https://github.com/hashicorp/vault-helm.git
+   path: .
 #   targetRevision: 0.0.3
  syncPolicy:
    automated:
