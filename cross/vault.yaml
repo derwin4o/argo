@@ -6,7 +6,7 @@ metadata:
  namespace: vault
 spec:
  destination:
-   namespace: vault
+   namespace: default
    server: https://kubernetes.default.svc
  project: default
  source:
@@ -19,7 +19,7 @@ spec:
 #      - name: image.name
 #         value: quay.io/ablock/gitops-helm-quarkus
 #   chart: vault-stable
-   repoURL: https://github.com/hashicorp/vault-helm.git
+   repoURL: ht tps://github.com/hashicorp/vault-helm.git
 #   targetRevision: 0.0.3
  syncPolicy:
      automated:
