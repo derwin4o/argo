@@ -8,10 +8,10 @@ metadata:
 spec: 
   project: default 
   source:
-    repoURL: https://github.com/argoproj/argo-workflows.git
+    repoURL: https://github.com/argoproj/argo-workflows/blob/master/manifests/quick-start-postgres.yaml
     targetRevision: HEAD
-    path: blob/master/manifests/
-      include: 'quick-start-postgres.yaml'
+    # path: blob/master/manifests/
+    # include: 'quick-start-postgres.yaml'
   destination:
     server: https://kubernetes.default.svc
     namespace: argo
