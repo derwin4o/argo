@@ -8,7 +8,7 @@ metadata:
 spec: 
   project: default 
   source:
-    repoURL: https://github.com/argoproj/argo-workflows/blob/master/manifests/quick-start-postgres.yaml
+    repoURL: https://github.com/argoproj/argo-workflows.git
     targetRevision: HEAD
     chart: blob/master/manifests/quick-start-postgres.yaml
     # path: blob/master/manifests/
