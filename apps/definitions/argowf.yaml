@@ -1,18 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argoworkflow
+  name: argowf
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec: 
   project: default 
   source:
-    repoURL: https://github.com/argoproj/argo-workflows.git
-    #  targetRevision: HEAD
-    chart: blob/master/manifests/quick-start-postgres.yaml
-    # path: blob/master/manifests/
-    # include: 'quick-start-postgres.yaml'
+    repoURL: https://github.com/derwin4o/argo.git
+    targetRevision: HEAD
+    path: apps/argowf-install
   destination:
     server: https://kubernetes.default.svc
     namespace: argo
