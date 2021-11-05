@@ -9,7 +9,7 @@ spec:
   project: default 
   source:
     repoURL: https://github.com/argoproj/argo-workflows.git
-    targetRevision: HEAD
+    #  targetRevision: HEAD
     chart: blob/master/manifests/quick-start-postgres.yaml
     # path: blob/master/manifests/
     # include: 'quick-start-postgres.yaml'
