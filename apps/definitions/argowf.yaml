@@ -10,7 +10,8 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argo-workflows.git
     targetRevision: HEAD
-    path: manifests/
+    path: blob/master/manifests/
+      include: 'quick-start-postgres.yaml'
   destination:
     server: https://kubernetes.default.svc
     namespace: argo
